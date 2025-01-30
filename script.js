@@ -1,5 +1,5 @@
 // Set the wedding date (YYYY, MM-1, DD)
-const weddingDate = new Date(2025, 1, 14); // February is month 1 (0-indexed)
+const weddingDate = new Date(2025, 2, 09); // February is month 1 (0-indexed)
 
 function updateCountdown() {
   const now = new Date();
