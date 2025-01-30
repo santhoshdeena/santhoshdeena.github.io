@@ -1,0 +1,53 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('wedding-background.jpg'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.wedding-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.countdown-item {
+  background: #ff6f61;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.countdown-item span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
