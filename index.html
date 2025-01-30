@@ -1,35 +1,289 @@
-<!DOCTYPE html>
+
+
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Countdown to Our Wedding</title>
-  <link rel="stylesheet" href="styles.css">
+	<title>Nithya's Invitation</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="common-css/font-icon.css" rel="stylesheet">
+	
+	
+	<link href="01-homepage/css/styles.css" rel="stylesheet">
+	
+	<link href="01-homepage/css/responsive.css" rel="stylesheet">
+	
 </head>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("SEPT 16, 2024 6:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  //document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+document.getElementById('clock').innerHTML = ''
+				+ '<div class="time-sec"><span class="title">'+days+'</span> days </div>'
+				+ '<div class="time-sec"><span class="title">'+hours+'</span> hours </div>'
+				+ '<div class="time-sec"><span class="title">'+minutes+'</span> minutes </div>'
+				+ '<div class="time-sec"><span class="title">'+seconds+'</span> seconds </div>'
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 <body>
-  <div class="container">
-    <h1>We're Getting Married!</h1>
-    <p>Join us as we celebrate our special day on:</p>
-    <p class="wedding-date">March 09, 2025</p>
-    <div class="countdown">
-      <div class="countdown-item">
-        <span id="days">00</span>
-        <span>Days</span>
-      </div>
-      <div class="countdown-item">
-        <span id="hours">00</span>
-        <span>Hours</span>
-      </div>
-      <div class="countdown-item">
-        <span id="minutes">00</span>
-        <span>Minutes</span>
-      </div>
-      <div class="countdown-item">
-        <span id="seconds">00</span>
-        <span>Seconds</span>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+	
+	<header>
+		
+		<div class="container">
+		</div><!-- container -->
+	</header>
+	
+	
+	<div class="main-slider">
+		<div class="display-table center-text">
+			<div class="display-table-cell">
+				<div class="coloumn">
+			        <i class="small-icon icon icon-tie"></i>
+					<h5 class="date">16 SEPTEMBER 2024</h5>
+					<h3 class="pre-title">Save The Date</h3>
+					<h1 class="title">Nithya<i class="icon icon-heart"></i> Vinothbala</h1>
+					
+				</div><!-- slider-content-->
+			</div><!--display-table-cell-->
+		</div><!-- display-table-->
+	</div><!-- main-slider -->
+	
+	
+	<section class="section story-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					
+					<div class="heading">
+						<h2 class="title">NITHYA & VINOTH'S INVITATION</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+
+					<p class="desc margin-bottom">We are excited to invite you to our wedding day, where we will pledge our love and celebrate the beginning of our happily ever after.</p>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section counter-area center-text">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-sm-12">
+					<div class="heading">
+						<h2 class="title">Don't miss it!</h2>
+						
+						<li><a href="timer.html"></a></li>
+					</div>
+				</div>
+				
+				<div class="col-sm-2"></div>
+				<div id="demo"></div>
+
+				<div class="col-sm-8">
+					
+					<div class="remaining-time">
+						<div id="clock"></div>
+					</div><!-- remaining-time -->
+				</div><!-- col-sm-10 -->
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section w-details-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					
+					<div class="heading">
+						<h2 class="title"><b></b>Wedding Details</h2></b></h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+					
+					<div class="wedding-details margin-bottom">
+						
+						<div class="w-detail right">
+							<i class="icon icon-ciurclke"></i>
+							<h4 class="title"><b>MUHURTHAM</b></h4>
+							<P>On Monday 16th September,2024.<br>At morning 6:00.</br></P>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail left">
+							<i class="icon icon-wine-glass"></i>
+							<h4 class="title"><b>VENUE</b></h4>
+							<p>Sivan Kovil,<br>Tuticorin,</br>Tamil Nadu.</p>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail right">
+							<i class="icon icon-cake"></i>
+							<h4 class="title"><b>RECEPTION</b></h4>
+							<P><br><h5>On  Monday </h5>16th SEPTEMBER,2024.</br>At Rajam Mahal FunctionHall</br>Tuticorin.</P>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail left">
+							<i class="icon icon-camera"></i>
+							<h4 class="title">PHOTOGRAPHY & LUNCH</h4>
+							<P>On  Monday 16th SEPTEMBER,2024.<h5>at 12:00 pm Onwards,</h5>Rajam Mahal Function Hall,TamilNadu.</br></P>
+					</div><!-- wedding-details -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section ceremony-area center-text">
+		<div class="container">
+			<div class="col">
+				<div class="col-sm-12">
+					
+					<div class="heading">
+						<h2 class="title">Wedding & Ceremonies</h2>
+						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
+					</div>
+
+					<div class="ceremony margin-bottom">
+						<p class="desc">Love is eternal, and we are thrilled to invite you to the wedding ceremony of Nithya & Vinoth. Your presence would mean the world to us.</p>
+						
+					</div>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	
+	
+	<section class="section galery-area center-text">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					
+					<div class="heading">
+						<h2 class="title">Our Memories</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+					
+					<div class="image-gallery">
+						<div class="row">
+					
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-1-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-1-600x400.jpg" alt="Gallery Image"alt="Lights" style="width:100%"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-2-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-2-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-3-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-3-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+						
+							
+							
+						</div><!-- row -->
+						
+					</div><!-- image-gallery -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="contact-area">
+		<div class="contact-wrapper section float-left">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					
+					<div class="col-sm-10">
+						<div class="heading">
+							<h3 class="title">Contact Us</h3>
+							<i class="icon icon-star"></i>
+						</div>
+						
+						<div class="margin-bottom">
+							<p>On the SEPTEMBER 2024</p>
+							<p>Join us as we celebrate life and love.</p>
+							<h5><a href="tel:7005682270" class="phone">7005682270</a></h5>
+							<h5><a href="tel:9952015299" class="phone">9952015299</a></h5>
+							<p>Rajam mahal<br>Tuticorin.</br>628002</p>
+							
+						</div><!-- margin-bottom -->
+					</div><!-- col-sm-10 -->
+					
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- float-left -->
+	</section><!-- section -->
+	
+	
+	<footer>
+		<div class="container center-text">
+			
+			<ul class="footer-links">
+				 <i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i>
+				<h4><cetre>NITHYA AYYANAR</cetre></h4></ul>
+			</br>
+		    </br>
+			</ul>
+		</div>
+	</footer>
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/jquery.countdown.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	
+	<script src="common-js/scripts.js"></script>		
+			
 </body>
 </html>
