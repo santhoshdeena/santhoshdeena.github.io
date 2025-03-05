@@ -140,7 +140,7 @@ b.light-color{ color: #444; }
 
 .display-table{ display: table; height: 100%; width: 100%; }
 
-.display-table-cell{ display: table-cell; vertical-align: bottom; }
+.display-table-cell{ display: table-cell; vertical-align: middle; }
 
 
 
